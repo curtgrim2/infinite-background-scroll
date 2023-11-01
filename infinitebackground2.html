@@ -1,0 +1,77 @@
+<!DOCTYPE>
+<html>
+<head>
+<style>
+
+@keyframes infinitescroll{
+  0%{
+    transform:translateX(0%);
+  }
+  100%{
+    transform:translateX(-100%);
+  }
+}
+
+*{
+  margin:0;
+  padding:0;
+}
+
+body{
+text-align: center;
+background-color:#0a3869;
+color:white;
+
+display: flex;
+justify-content: center;
+align-items: center; /*For maincontent - Alternative is a transform in #maincontent*/
+}
+
+.contain{
+  position: fixed;
+  top:0;
+  z-index:-1;
+    height:100%;
+background-color: black;
+white-space: nowrap;
+overflow:hidden;
+}
+
+.topinfinite{
+display: inline-block;
+font-size:25px;
+padding: 0 0%;
+animation: infinitescroll 8s infinite linear;
+}
+
+#maincontent{
+
+}
+
+</style>
+</head>
+<body>
+
+  <div id="maincontent">
+ <h1> THE VOID</h1>
+ </div>
+
+
+  <div class ="contain">
+  <div class="topinfinite">
+      <img src ="3Dmist5.png"/>
+  </div>
+
+  <div class="topinfinite">
+      <img src ="3Dmist5.png"/>
+  </div>
+
+   <div class="topinfinite">
+     <img src ="3Dmist5.png"/>
+    </div>
+  </div>
+
+
+
+</body>
+</html>
