@@ -29,33 +29,31 @@ align-items: center; /*For maincontent - Alternative is a transform in #maincont
 
 .contain{
   position: fixed;
-  top:0;
+  font-size:0; /*USe to get rid of space between topinfinite divs*/
   z-index:-1;
-    height:100%;
-background-color: black;
+background-color: black; /*EXTREMELY small sliver*/
 white-space: nowrap;
 overflow:hidden;
+
 }
 
 .topinfinite{
 display: inline-block;
+width:100%;
 font-size:25px;
-padding: 0 0%;
-animation: infinitescroll 8s infinite linear;
+animation: infinitescroll 15s infinite linear;
 }
 
-#maincontent{
+img{
+  height:100%;
+  width:100%;
 
 }
+
 
 </style>
 </head>
 <body>
-
-  <div id="maincontent">
- <h1> THE VOID</h1>
- </div>
-
 
   <div class ="contain">
   <div class="topinfinite">
@@ -71,6 +69,10 @@ animation: infinitescroll 8s infinite linear;
     </div>
   </div>
 
+
+  <div id="maincontent">
+ <h1> THE VOID</h1>
+ </div>
 
 
 </body>
